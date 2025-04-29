@@ -42,14 +42,14 @@
       >
       <button type="submit">Search Resumes</button>
     </form>
-    <form method="post" action="/generate_embedding">
-      <!-- <textarea name="query" rows="3" placeholder="Enter job description...">
-{{ query or '' }}</textarea
-      > -->
-      <button type="submit">Generate Embeddings</button>
+
+    <form action="/generate_embedding" method="post">
+      <button type="submit">Process Resumes</button>
     </form>
 
-    {% if results %}
+    {% if message %}
+    <p style="color: green">{{ message }}</p>
+    {% endif %} {% if results %}
     <h2>📄 Matching Resumes</h2>
     <table>
       <tr>

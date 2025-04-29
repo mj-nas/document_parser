@@ -7648,3 +7648,87 @@ sqlite3.OperationalError: no such column: collections.topic
 [32mINFO[0m:     [29-04-2025 17:30:10] 127.0.0.1:63328 - "POST /api/v1/collections HTTP/1.1" 200
 [32mINFO[0m:     [29-04-2025 17:30:34] 127.0.0.1:63357 - "GET /api/v1/collections HTTP/1.1" 200
 [32mINFO[0m:     [29-04-2025 17:30:34] 127.0.0.1:63357 - "POST /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:34:36] 127.0.0.1:63579 - "GET /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:34:36] 127.0.0.1:63579 - "POST /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:34:44] 127.0.0.1:63586 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [29-04-2025 17:34:44] Add of existing embedding ID: 0000002.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:44] Insert of existing embedding ID: 0000002.pdf
+[32mINFO[0m:     [29-04-2025 17:34:44] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:34:45] Add of existing embedding ID: 0000003.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:45] Insert of existing embedding ID: 0000003.pdf
+[32mINFO[0m:     [29-04-2025 17:34:45] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:34:45] Add of existing embedding ID: 0000004.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:45] Insert of existing embedding ID: 0000004.pdf
+[32mINFO[0m:     [29-04-2025 17:34:45] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:34:46] Add of existing embedding ID: 0000005.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:46] Insert of existing embedding ID: 0000005.pdf
+[32mINFO[0m:     [29-04-2025 17:34:46] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:34:46] Add of existing embedding ID: 0000006.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:46] Insert of existing embedding ID: 0000006.pdf
+[32mINFO[0m:     [29-04-2025 17:34:46] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:34:47] Add of existing embedding ID: 0000007.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:47] Insert of existing embedding ID: 0000007.pdf
+[32mINFO[0m:     [29-04-2025 17:34:47] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:34:48] Add of existing embedding ID: 0000008.pdf
+[33mWARNING[0m:  [29-04-2025 17:34:48] Insert of existing embedding ID: 0000008.pdf
+[32mINFO[0m:     [29-04-2025 17:34:48] 127.0.0.1:63586 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[32mINFO[0m:     [29-04-2025 17:35:23] 127.0.0.1:63622 - "GET /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:35:23] 127.0.0.1:63622 - "POST /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:35:41] 127.0.0.1:63642 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [29-04-2025 17:35:41] Add of existing embedding ID: 0000002.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:41] Insert of existing embedding ID: 0000002.pdf
+[32mINFO[0m:     [29-04-2025 17:35:41] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:35:41] Add of existing embedding ID: 0000003.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:41] Insert of existing embedding ID: 0000003.pdf
+[32mINFO[0m:     [29-04-2025 17:35:41] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:35:42] Add of existing embedding ID: 0000004.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:42] Insert of existing embedding ID: 0000004.pdf
+[32mINFO[0m:     [29-04-2025 17:35:42] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:35:42] Add of existing embedding ID: 0000005.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:42] Insert of existing embedding ID: 0000005.pdf
+[32mINFO[0m:     [29-04-2025 17:35:42] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:35:43] Add of existing embedding ID: 0000006.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:43] Insert of existing embedding ID: 0000006.pdf
+[32mINFO[0m:     [29-04-2025 17:35:43] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:35:44] Add of existing embedding ID: 0000007.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:44] Insert of existing embedding ID: 0000007.pdf
+[32mINFO[0m:     [29-04-2025 17:35:44] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:35:45] Add of existing embedding ID: 0000008.pdf
+[33mWARNING[0m:  [29-04-2025 17:35:45] Insert of existing embedding ID: 0000008.pdf
+[32mINFO[0m:     [29-04-2025 17:35:45] 127.0.0.1:63642 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[32mINFO[0m:     [29-04-2025 17:41:55] 127.0.0.1:64120 - "GET /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:41:55] 127.0.0.1:64120 - "POST /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:46:05] 127.0.0.1:64242 - "GET /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:46:05] 127.0.0.1:64242 - "POST /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:46:31] 127.0.0.1:64266 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [29-04-2025 17:46:31] Add of existing embedding ID: 0000002.pdf
+[33mWARNING[0m:  [29-04-2025 17:46:31] Insert of existing embedding ID: 0000002.pdf
+[32mINFO[0m:     [29-04-2025 17:46:31] 127.0.0.1:64266 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:46:32] Add of existing embedding ID: 0000003.pdf
+[33mWARNING[0m:  [29-04-2025 17:46:32] Insert of existing embedding ID: 0000003.pdf
+[32mINFO[0m:     [29-04-2025 17:46:32] 127.0.0.1:64266 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:46:32] Add of existing embedding ID: 0000004.pdf
+[33mWARNING[0m:  [29-04-2025 17:46:32] Insert of existing embedding ID: 0000004.pdf
+[32mINFO[0m:     [29-04-2025 17:46:32] 127.0.0.1:64266 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[33mWARNING[0m:  [29-04-2025 17:46:33] Add of existing embedding ID: 0000005.pdf
+[33mWARNING[0m:  [29-04-2025 17:46:33] Insert of existing embedding ID: 0000005.pdf
+[32mINFO[0m:     [29-04-2025 17:46:33] 127.0.0.1:64266 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/add HTTP/1.1" 201
+[32mINFO[0m:     [29-04-2025 17:46:55] 127.0.0.1:64287 - "POST /api/v1/collections/be559fe8-c9fd-441c-afea-22d44d954e7e/query HTTP/1.1" 200
+[32mINFO[0m:     [29-04-2025 17:50:45] Shutting down
+[32mINFO[0m:     [29-04-2025 17:50:45] Waiting for application shutdown.
+[32mINFO[0m:     [29-04-2025 17:50:45] Application shutdown complete.
+[32mINFO[0m:     [29-04-2025 17:50:45] Finished server process [[36m9904[0m]
+[32mINFO[0m:     [29-04-2025 17:50:57] Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [29-04-2025 17:50:57] Starting component System
+[36mDEBUG[0m:    [29-04-2025 17:50:57] Starting component Posthog
+[36mDEBUG[0m:    [29-04-2025 17:50:57] Starting component SqliteDB
+[36mDEBUG[0m:    [29-04-2025 17:50:57] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [29-04-2025 17:50:57] Starting component SegmentAPI
+[32mINFO[0m:     [29-04-2025 17:50:57] Started server process [[36m18968[0m]
+[32mINFO[0m:     [29-04-2025 17:50:57] Waiting for application startup.
+[32mINFO[0m:     [29-04-2025 17:50:57] Application startup complete.
+[32mINFO[0m:     [29-04-2025 17:50:57] Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [29-04-2025 17:51:41] Shutting down
+[32mINFO[0m:     [29-04-2025 17:51:41] Waiting for application shutdown.
+[32mINFO[0m:     [29-04-2025 17:51:41] Application shutdown complete.
+[32mINFO[0m:     [29-04-2025 17:51:41] Finished server process [[36m18968[0m]

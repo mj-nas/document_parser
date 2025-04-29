@@ -38,9 +38,6 @@ async def search_resumes(request: Request, query: str = Form(...)):
     print(f"🔍 Searching for resumes similar to: {query}")
     print("Query Vector:", query_vector[:5])
     results = query_embedding(query_vector)
-    # Print results for debugging
-    print("Query Results:", results)
-    # Render results in the UI
 
     return templates.TemplateResponse("index.html", {
         "request": request,
@@ -62,9 +59,14 @@ async def get_file(file_name: str):
     return {"error": "File not found"}
 
 @app.post("/generate_embedding")
-async def generate_embedding_endpoint():
+async def generate_embedding_endpoint(request: Request):
     resume_folder = "Resume/samples"  # Change to actual path
+    print(f"🔄 Generating embeddings for resumes in folder: {resume_folder}")
     process_folder(resume_folder)
+    return templates.TemplateResponse("index.html", {
+        "request": request,
+        "message": f"✅ Resume processing triggered for folder: {RESUME_FOLDER}"
+    })
     
 
 def process_pdf(file):
