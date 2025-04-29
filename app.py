@@ -15,8 +15,8 @@ app = FastAPI()
 chroma_client = chromadb.HttpClient(host='localhost', port=8000)
 collections = chroma_client.list_collections()
 print("Collections:", collections)
-tenant = chroma_client.tenant
-print("Tenant:", tenant)
+# tenant = chroma_client.tenant
+# print("Tenant:", tenant)
 collection = chroma_client.get_or_create_collection(name="resumes")
 
 # Jinja2 Templates (for UI rendering)
@@ -35,7 +35,12 @@ async def search_resumes(request: Request, query: str = Form(...)):
     # Convert query to vector embedding
     query_vector = generate_embedding(query)
     # Query for similar embeddings
+    print(f"🔍 Searching for resumes similar to: {query}")
+    print("Query Vector:", query_vector[:5])
     results = query_embedding(query_vector)
+    # Print results for debugging
+    print("Query Results:", results)
+    # Render results in the UI
 
     return templates.TemplateResponse("index.html", {
         "request": request,
@@ -56,6 +61,11 @@ async def get_file(file_name: str):
         return FileResponse(file_path, media_type="application/pdf")
     return {"error": "File not found"}
 
+@app.post("/generate_embedding")
+async def generate_embedding_endpoint():
+    resume_folder = "Resume/samples"  # Change to actual path
+    process_folder(resume_folder)
+    
 
 def process_pdf(file):
     """Extracts text from a PDF resume."""

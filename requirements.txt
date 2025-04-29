@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pypdf
+sentence-transformers
+chromadb
+jinja2
+starlette
+python-multipart
+numpy==1.26.4

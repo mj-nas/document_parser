@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Search</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; }
-        textarea, button { width: 100%; margin-top: 10px; padding: 10px; }
-        table { width: 100%; margin-top: 20px; border-collapse: collapse; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f4f4f4; }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+      }
+      textarea,
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>🔍 Resume Search</h1>
 
     <form method="post" action="/search">
-        <textarea name="query" rows="3" placeholder="Enter job description...">{{ query or '' }}</textarea>
-        <button type="submit">Search Resumes</button>
+      <textarea name="query" rows="3" placeholder="Enter job description...">
+{{ query or '' }}</textarea
+      >
+      <button type="submit">Search Resumes</button>
+    </form>
+    <form method="post" action="/generate_embedding">
+      <!-- <textarea name="query" rows="3" placeholder="Enter job description...">
+{{ query or '' }}</textarea
+      > -->
+      <button type="submit">Generate Embeddings</button>
     </form>
 
     {% if results %}
     <h2>📄 Matching Resumes</h2>
     <table>
-        <tr>
-            <th>Rank</th>
-            <th>Resume</th>
-            <th>Similarity Score</th>
-            <th>File</th>
-        </tr>
-        {% for res in results %}
-        <tr>
-            <td>{{ res.rank }}</td>
-            <td>{{ res.file_name }}</td>
-            <td>{{ "%.2f"|format(res.similarity_score) }}</td>
-            <!-- onclick open newtab with the file_path -->
-            <td><a href="{{ res.file_url }}" target="_blank">&#xf1c1;</a></td>
-        </tr>
-        {% endfor %}
+      <tr>
+        <th>Rank</th>
+        <th>Resume</th>
+        <th>Similarity Score</th>
+        <th>File</th>
+      </tr>
+      {% for res in results %}
+      <tr>
+        <td>{{ res.rank }}</td>
+        <td>{{ res.file_name }}</td>
+        <td>{{ "%.2f"|format(res.similarity_score) }}</td>
+        <!-- onclick open newtab with the file_path -->
+        <td><a href="{{ res.file_url }}" target="_blank">&#xf1c1;</a></td>
+      </tr>
+      {% endfor %}
     </table>
     {% endif %}
-</body>
+  </body>
 </html>
