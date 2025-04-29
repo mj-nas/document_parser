@@ -65,7 +65,7 @@ async def generate_embedding_endpoint(request: Request):
     process_folder(resume_folder)
     return templates.TemplateResponse("index.html", {
         "request": request,
-        "message": f"✅ Resume processing triggered for folder: {RESUME_FOLDER}"
+        "message": f"✅ Resume processing triggered for folder: {resume_folder}"
     })
     
 
