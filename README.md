@@ -59,7 +59,7 @@ This is a prototype application that demonstrates how AI and modern NLP techniqu
 
 This application follows a simple semantic retrieval pipeline using ChromaDB + MiniLM:
 
-![Semantic Resume Search Architecture](./A_flowchart-style_2D_digital_diagram_depicts_a_Res.png)
+![Semantic Resume Search Architecture](./visualization.png)
 
 ---
 
