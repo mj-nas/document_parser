@@ -20,31 +20,36 @@ This is a prototype application that demonstrates how AI and modern NLP techniqu
 
 ## 🛠️ How to Run the Application
 
-1. **Install Dependencies**
+1. **Create virtual environtment in python (optional)**
 
    ```bash
    python -m venv venv
    source venv/bin/activate  # or venv\Scripts\activate on Windows
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-2. **Start ChromaDB (Separate Terminal)**
+3. **Start ChromaDB (Separate Terminal)**
 
    ```bash
    chroma run --path ./chroma_storage
    ```
 
-3. **Process Resume Folder (Optional)**
+4. **Process Resume Folder (Optional)**
 
    In `app.py`, call `process_folder("Resume/samples")` once to add your data to the vector DB.
 
-4. **Run the FastAPI Server**
+5. **Run the FastAPI Server**
 
    ```bash
    python app.py
    ```
 
-5. **Access the App**
+6. **Access the App**
 
    Open your browser and go to: `http://127.0.0.1:8001`
 
